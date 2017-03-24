@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 body {
   font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -105,35 +106,31 @@ header {
   right: 30%; }
 
 .navbar-inverse {
-  background-color: none !important;
   border-color: #080808; }
 
 .nav li a {
   padding: 25px 30px; }
 
+* {
+  outline: 1px solid rgba(255, 0, 0, 0.4); }
+
 #about-me {
   z-index: 3;
   background: #e3e1d2;
   overflow: hidden;
-  position: relative; }
-  #about-me:after {
-    width: 50%;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    background: #efece2;
-    content: "";
-    position: absolute; }
-  #about-me .col-right {
-    position: absolute;
-    top: 0px;
-    width: 50%;
-    bottom: 0px;
-    right: 0px;
-    text-align: center;
-    z-index: 3;
-    padding: 150px;
-    padding-top: 120px; }
+  position: relative;
+  /*
+  .col-right {
+      background: #efece2 !important;
+  }
+  */ }
+  #about-me .about {
+    transform: translateY(35px); }
+  #about-me .description {
+    padding-top: 50px; }
+  #about-me img {
+    width: 75%;
+    margin-left: 50px; }
 
 @media (max-width: 991px) {
   body #about-me .col-right {
@@ -163,12 +160,32 @@ header {
   body .flowers-leaves .flowers-bottomleft {
     transform: translate(-60%, 60%); } }
 section {
-  padding: 100px 0; }
+  padding: 20px 0; }
+  section h1, section h2, section h3, section p, section span {
+    font-family: "Alegreya Sans", Helvetica, Arial, sans-serif; }
   section h1 {
+    font-weight: 800;
+    font-size: 52px;
     color: #f25957;
-    font-weight: bold;
-    font-size: 50px;
     writing-mode: vertical-lr;
-    transform: rotate(180deg); }
+    transform: rotate(180deg);
+    padding: 0 10px; }
+  section p {
+    font-weight: 500;
+    font-size: 20px;
+    color: #0000; }
+    section p span {
+      color: #395442;
+      font-weight: 800; }
+  section .row {
+    padding: 70px 0; }
+
+/* General Blueprint Style */
+@font-face {
+  font-family: 'bpicons';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/bpicons/bpicons.eot");
+  src: url("../fonts/bpicons/bpicons.eot?#iefix") format("embedded-opentype"), url("../fonts/bpicons/bpicons.woff") format("woff"), url("../fonts/bpicons/bpicons.ttf") format("truetype"), url("../fonts/bpicons/bpicons.svg#bpicons") format("svg"); }
 
 /*# sourceMappingURL=main.css.map */

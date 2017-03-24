@@ -1,13 +1,39 @@
 $coral : #f25957;
+$font-global :  'Alegreya Sans', Helvetica, Arial, sans-serif;
+$title : 52px;
+$subtitle : 28px;
+$paragraph : 20px;
+$green : #395442;
+$weight-general : 500; 
+$weight-strong : 800;
 
 section {
-    padding: 100px 0;
+    padding: 20px 0;
     
+    h1,h2,h3,p,span{
+        font-family: $font-global;
+    }
+
     h1 {
+        font-weight: $weight-strong;
+        font-size: $title;
         color:$coral;
-        font-weight: bold;
-        font-size: 50px;
         writing-mode: vertical-lr;
         transform: rotate(180deg);
+        padding: 0 10px;
     }
+    p {
+        font-weight: $weight-general;
+        font-size: $paragraph;
+        color: #0000;
+        
+        span {
+            color: $green;
+            font-weight: $weight-strong;
+        }
+    }
+    .row {
+        padding: 70px 0;
+    }
+    
 }
