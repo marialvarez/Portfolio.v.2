@@ -1,0 +1,30 @@
+//ABOUT ME
+
+#about-me {
+    z-index: 3;
+    background: #e3e1d2;
+    overflow: hidden;
+    position: relative;
+    
+    &:after{
+        width: 50%;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        background: #efece2;
+        content: "";
+        position: absolute;        
+    }
+    .col-right {
+        position: absolute;
+        top: 0px;
+        width: 50%;
+        bottom: 0px;
+        right: 0px;
+        text-align: center;
+        z-index: 3;
+        padding: 150px;
+        padding-top: 120px;
+    }
+}
+

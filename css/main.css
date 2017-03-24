@@ -1,0 +1,174 @@
+body {
+  font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.42857143;
+  color: #333333;
+  background: #ffffff;
+  position: relative;
+  height: 100%;
+  min-height: 100%; }
+  body .flowers-topleft,
+  body .flowers-topright,
+  body .flowers-bottomright,
+  body .flowers-bottomleft {
+    background-size: cover !important;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    display: none;
+    -webkit-transition: -webkit-transform 1s;
+    transform: transform 1s;
+    position: fixed;
+    z-index: 50; }
+  body .flowers-topleft {
+    top: 0%;
+    left: -8%;
+    height: 60%;
+    background: url(/elements-oh-flowers-DNVR2M-2016-06-09/21.png) no-repeat right bottom; }
+  body .flowers-topright {
+    top: 0%;
+    right: 0%;
+    background: url(/elements-oh-flowers-DNVR2M-2016-06-09/22.png) no-repeat left bottom; }
+  body .flowers-bottomright {
+    bottom: 0%;
+    height: 58%;
+    right: 0%;
+    width: 50%;
+    background: url(/elements-oh-flowers-DNVR2M-2016-06-09/19.png) no-repeat left top; }
+  body .flowers-bottomleft {
+    bottom: 0%;
+    left: 0%;
+    background: url(/elements-oh-flowers-DNVR2M-2016-06-09/16.png) no-repeat right top; }
+
+.transition,
+.scrollDown * {
+  transition: all 0.3s ease-in-out; }
+
+header,
+section,
+footer {
+  position: relative; }
+
+header {
+  background: #f25957;
+  height: 100%; }
+  header h1 {
+    position: relative;
+    top: 40%;
+    margin: 0 auto;
+    color: beige;
+    font-weight: bold;
+    font-size: 50px;
+    border: 1px solid white;
+    width: 250px;
+    padding: 10px 10px; }
+
+.flowers-leaves {
+  top: 0px; }
+  .flowers-leaves .flowers-topleft {
+    transform: translate(-44%, -44%); }
+  .flowers-leaves .flowers-topright {
+    transform: translate(44%, -44%); }
+  .flowers-leaves .flowers-bottomright {
+    transform: translate(44%, 44%); }
+  .flowers-leaves .flowers-bottomleft {
+    transform: translate(-44%, 44%); }
+
+#section2 {
+  padding-top: 50px;
+  height: 500px;
+  color: #fff;
+  background-color: #673ab7; }
+
+#section3 {
+  padding-top: 50px;
+  height: 500px;
+  color: #fff;
+  background-color: #ff9800; }
+
+#section4 {
+  padding-top: 50px;
+  height: 500px;
+  color: #fff;
+  background-color: #00bcd4; }
+
+.container-nav {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto; }
+
+.navbar-fixed-top {
+  position: fixed;
+  left: 30%;
+  z-index: 1030;
+  right: 30%; }
+
+.navbar-inverse {
+  background-color: none !important;
+  border-color: #080808; }
+
+.nav li a {
+  padding: 25px 30px; }
+
+#about-me {
+  z-index: 3;
+  background: #e3e1d2;
+  overflow: hidden;
+  position: relative; }
+  #about-me:after {
+    width: 50%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #efece2;
+    content: "";
+    position: absolute; }
+  #about-me .col-right {
+    position: absolute;
+    top: 0px;
+    width: 50%;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+    z-index: 3;
+    padding: 150px;
+    padding-top: 120px; }
+
+@media (max-width: 991px) {
+  body #about-me .col-right {
+    position: relative;
+    top: inherit;
+    bottom: inherit;
+    right: inherit;
+    left: inherit;
+    width: 100%;
+    height: 400px; }
+  body:after {
+    display: none; }
+  body .flowers-topleft {
+    transform: translate(-10%, -10%); }
+  body .flowers-topright {
+    transform: translate(10%, -10%); }
+  body .flowers-bottomright {
+    transform: translate(10%, 10%); }
+  body .flowers-bottomleft {
+    transform: translate(-10%, 10%); }
+  body .flowers-leaves .flowers-topleft {
+    transform: translate(-55%, -55%); }
+  body .flowers-leaves .flowers-topright {
+    transform: translate(55%, -55%); }
+  body .flowers-leaves .flowers-bottomright {
+    transform: translate(55%, 55%); }
+  body .flowers-leaves .flowers-bottomleft {
+    transform: translate(-60%, 60%); } }
+section {
+  padding: 100px 0; }
+  section h1 {
+    color: #f25957;
+    font-weight: bold;
+    font-size: 50px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg); }
+
+/*# sourceMappingURL=main.css.map */
