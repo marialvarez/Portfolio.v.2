@@ -67,7 +67,7 @@ header {
         padding: 10px 10px;
     }
     p{
-        font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;;
+        font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
         position: relative;
         top:42%;
         margin: 0 auto;
@@ -114,19 +114,25 @@ header {
     padding-left: 0;
     margin-right: auto;
     margin-left: auto;
+    font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    background-color: rgb(253, 31, 41) !important;
 }
 .navbar-fixed-top {
     position: fixed;
-    left: 30%;
-    z-index: 1030;
-    right: 30%;
+    padding-left: 30%;
+    z-index: 10;
+    padding-right: 30%;
 }
 .navbar-inverse {
-    border-color: #080808;
-    background-color: none;
+    background-color: rgb(253, 31, 41) !important;
+    border-color: rgb(253, 31, 41) !important;
 }
 .nav li a {
-    padding: 25px 30px;
+    padding: 20px 29px;
 }
-
+.navbar-inverse .navbar-nav>.active>a {
+    background-color: rgb(253, 31, 41) !important; 
+    color: #fff;
+}
 

@@ -1,9 +1,10 @@
-$coral : #f25957;
+$coral : rgb(253, 31, 41);
 $font-global :  'Alegreya Sans', Helvetica, Arial, sans-serif;
 $title : 52px;
 $subtitle : 28px;
 $paragraph : 18px;
 $green : #395442;
+$green-2 :#b7bd59;
 $weight-general : 500; 
 $weight-strong : 800;
 
@@ -18,7 +19,7 @@ section {
         font-weight: $weight-strong;
         text-shadow: 1px 1px #333;
         font-size: $title;
-        color:#b7bd59;
+        color:$coral;
         writing-mode: vertical-lr;
         transform: rotate(180deg);
         padding: 10px 10px;

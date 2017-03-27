@@ -91,20 +91,27 @@ header {
   padding-right: 0;
   padding-left: 0;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  background-color: #fd1f29 !important; }
 
 .navbar-fixed-top {
   position: fixed;
-  left: 30%;
-  z-index: 1030;
-  right: 30%; }
+  padding-left: 30%;
+  z-index: 10;
+  padding-right: 30%; }
 
 .navbar-inverse {
-  border-color: #080808;
-  background-color: none; }
+  background-color: #fd1f29 !important;
+  border-color: #fd1f29 !important; }
 
 .nav li a {
-  padding: 25px 30px; }
+  padding: 20px 29px; }
+
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #fd1f29 !important;
+  color: #fff; }
 
 * {
   outline: 1px solid rgba(255, 0, 0, 0.4);
@@ -174,7 +181,7 @@ section {
     font-weight: 800;
     text-shadow: 1px 1px #333;
     font-size: 52px;
-    color: #b7bd59;
+    color: #fd1f29;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     padding: 10px 10px; }
@@ -322,6 +329,7 @@ img {
 /***********************CONTACT*********************/
 #contact {
   padding-bottom: 0;
+  padding-right: 100px;
   background-color: #efece2; }
 
 .despedida {
@@ -357,8 +365,8 @@ img {
 .frase {
   color: white;
   text-align: center;
-  background-color: #F87060;
-  font-family: 'Righteous', cursive;
+  background-color: #fd1f29;
+  font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
   font-size: 20px;
   padding: 1%; }
 

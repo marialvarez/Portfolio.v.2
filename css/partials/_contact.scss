@@ -1,13 +1,14 @@
 /***********************CONTACT*********************/
 #contact {
     padding-bottom: 0;
+    padding-right: 100px;
     background-color: #efece2;
 }
 .despedida{
 	display: inline-block;
-  width: 40%;
-  color: #213556;
-  font-size: 16px;
+    width: 40%;
+    color: #213556;
+    font-size: 16px;
 }
 .icn-final{
   border-radius: 50%;
@@ -25,8 +26,8 @@
 	background-color: #F87060;
 	border-radius: 5px;
 	padding: 1%;
-  margin: 2em 0;
-  cursor: pointer;
+    margin: 2em 0;
+    cursor: pointer;
 }
 .cv a{
   text-decoration: none;
@@ -36,8 +37,8 @@
 .frase{
   color:white;
   text-align: center;
-  background-color: #F87060;
-  font-family: 'Righteous', cursive;
+  background-color: rgb(253, 31, 41);
+  font-family:'Alegreya Sans', Helvetica, Arial, sans-serif;
   font-size: 20px;
   padding: 1%;
 }
