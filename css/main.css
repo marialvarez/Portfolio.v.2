@@ -12,7 +12,7 @@ body {
   body .flowers-bottomleft {
     background-size: cover !important;
     position: absolute;
-    width: 50%;
+    width: 40%;
     height: 50%;
     display: none;
     -webkit-transition: -webkit-transform 1s;
@@ -20,37 +20,36 @@ body {
     position: fixed;
     z-index: 50; }
   body .flowers-topleft {
-    top: 0%;
+    top: -2%;
     left: -8%;
-    height: 60%;
-    background: url(../img/15.png) no-repeat right bottom; }
+    width: 45%;
+    background: url(../img/222.png) no-repeat right bottom; }
   body .flowers-topright {
-    top: 0%;
-    right: 0%;
+    top: -5%;
+    right: -8%;
+    width: 45%;
     background: url(../img/22.png) no-repeat left bottom; }
   body .flowers-bottomright {
-    bottom: 0%;
-    height: 58%;
-    right: 0%;
-    width: 50%;
+    bottom: -2%;
+    right: -5%;
     background: url(../img/19.png) no-repeat left top; }
   body .flowers-bottomleft {
     bottom: 0%;
-    left: 0%;
+    left: -8%;
     background: url(../img/16.png) no-repeat right top; }
 
 header {
-  background: radial-gradient(#f0776c, #d76d83);
+  background: radial-gradient(#fcb28a, #c12b6c);
   height: 100%; }
   header h1 {
     font-family: 'Sacramento';
     position: relative;
     top: 40%;
     margin: 0 auto;
-    color: beige;
+    color: #6c0342;
     font-weight: bold;
-    font-size: 50px;
-    border-bottom: 1px solid white;
+    font-size: 65px;
+    border-bottom: 1px solid #6c0342;
     width: 450px;
     padding: 10px 10px; }
   header p {
@@ -58,7 +57,7 @@ header {
     position: relative;
     top: 42%;
     margin: 0 auto;
-    color: beige;
+    color: #6c0342;
     font-weight: 300;
     font-size: 20px;
     width: 300px;
@@ -66,7 +65,7 @@ header {
   header .glyphicon-chevron-down {
     position: relative;
     top: 400px;
-    left: 660px;
+    left: 640px;
     cursor: pointer;
     font-size: 30px;
     color: #fff; }
@@ -74,7 +73,7 @@ header {
 .flowers-leaves {
   top: 0px; }
   .flowers-leaves .flowers-topleft {
-    transform: translate(-44%, -44%); }
+    transform: translate(-20%, -44%); }
   .flowers-leaves .flowers-topright {
     transform: translate(44%, -44%); }
   .flowers-leaves .flowers-bottomright {
@@ -240,7 +239,7 @@ img {
 #skill {
   list-style: none;
   padding-top: 30px;
-  padding-left: 200px;
+  padding-left: 150px;
   padding-right: 110px;
   width: 90%; }
 
@@ -335,7 +334,7 @@ img {
     width: 20%; } }
 /***********************CONTACT*********************/
 #contact {
-  padding-bottom: 100px;
+  padding-bottom: 0px;
   padding-right: 100px;
   background-color: #efece2; }
 
