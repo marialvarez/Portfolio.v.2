@@ -1,6 +1,6 @@
 /***********************CONTACT*********************/
 #contact {
-    padding-bottom: 0;
+    padding-bottom: 100px;
     padding-right: 100px;
     background-color: #efece2;
 }
@@ -11,29 +11,39 @@
     font-size: 16px;
 }
 .icn-final{
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  background-color: #B3A394;
-  display: inline-block;
-  margin: 0 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: efece2;
+    border: 3px solid #9d9d9d;
+    display: inline-block;
+    margin: 0 20px;
 }
 .icn-final img{
-  margin-top: 25%;
+    margin-top: 25%;
+    padding: 0px;
+    &:hover {
+        color: #95932e;
+    }
 }
 .cv{
 	display: inline-block;
-	background-color: #F87060;
+	background-color: #fd1f29;
 	border-radius: 5px;
 	padding: 1%;
     margin: 2em 0;
     cursor: pointer;
+    
+    &:hover {
+        background-color: #95932e;
+    }
 }
 .cv a{
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
+
 .frase{
   color:white;
   text-align: center;

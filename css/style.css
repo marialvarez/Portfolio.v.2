@@ -58,24 +58,21 @@
 	display: block;
 }
 .dg-container nav{
-	width: 58px;
+	width: 70px;
 	position: absolute;
-	z-index: 1000;
+	z-index: 10;
 	bottom: 10px;
 	left: 50%;
 	margin-left: -29px;
 }
 .dg-container nav span{
-	text-indent: -9000px;
 	float: left;
 	cursor:pointer;
-	width: 24px;
-	height: 25px;
-	opacity: 0.8;
-	background: transparent url(../img/arrows.png) no-repeat top left;
+	font-size: 30px;
+    color:rgb(253, 31, 41);	
 }
-.dg-container nav span:hover{
-	opacity: 1;
+.dg-container nav span i:hover{
+	color: #95932e;
 }
 .dg-container nav span.dg-next{
 	background-position: top right;

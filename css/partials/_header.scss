@@ -5,7 +5,6 @@ body {
     font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
     font-size: 15px;
     line-height: 1.42857143;
-    color: #333333;
     background: #ffffff;
     position: relative;
     height: 100%;
@@ -29,7 +28,7 @@ body {
         top: 0%;
         left: -8%;
         height: 60%;
-        background: url(/elements-oh-flowers-DNVR2M-2016-06-09/21.png) no-repeat right bottom;
+        background: url(/elements-oh-flowers-DNVR2M-2016-06-09/15.png) no-repeat right bottom;
     }
     .flowers-topright {
         top: 0%;
@@ -77,17 +76,15 @@ header {
         width: 300px;
         padding: 10px 40px;
     }
-    /*
-    span {
-        font-family: 'Vidaloka', serif;
+    .glyphicon-chevron-down {
         position: relative;
-        top:40%;
-        margin: 0 auto;
-        color:beige;
-        font-weight: bold;
-        font-size: 60px;
-        padding-left: 0px;
-    }*/
+        top: 400px;
+        left:650px;
+        cursor:pointer;
+        font-size: 30px;
+        color:#fff;	
+        z-index: 1000;
+    }
 }
 
 .flowers-leaves 
@@ -127,12 +124,20 @@ header {
 .navbar-inverse {
     background-color: rgb(253, 31, 41) !important;
     border-color: rgb(253, 31, 41) !important;
+    color: #fff !important;
 }
 .nav li a {
     padding: 20px 29px;
 }
 .navbar-inverse .navbar-nav>.active>a {
     background-color: rgb(253, 31, 41) !important; 
-    color: #fff;
+    
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    background-color: #95932e !important; 
+    text-shadow: 1px 1px #333;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff !important; 
 }
 

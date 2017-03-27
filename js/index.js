@@ -1,11 +1,13 @@
 $(document).ready(function(){
+    
     $(this).scrollTop(0);
     
     // Add scrollspy to <body>
     $('body').scrollspy({target: ".navbar", offset: 50});   
+    $('body').scrollspy({target: "#down-chevron", offset: 50});   
 
     // Add smooth scrolling on all links inside the navbar
-    $("#myNavbar a").on('click', function(event) {
+    $("#down-chevron").on('click', function(event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
          // Prevent default anchor click behavior
@@ -26,12 +28,45 @@ $(document).ready(function(){
         }  // End if
     });
     
-    $(".hover").mouseleave(
-    function () {
-      $(this).removeClass("hover");
-    }
-  );
-    
+        $(".hover").mouseleave(
+        function () {
+          $(this).removeClass("hover");
+        }
+      );
+});
+
+/*---------SCROLL----------*/
+$(window).scroll(function(event) {
+    if ($(window).scrollTop()>=150) {
+        event.preventDefault();
+        $('body').addClass('flowers-leaves');
+        $('nav').fadeIn(2000);
+    } 
+    else if ($(window).scrollTop()== 0) {
+        $('body').removeClass('flowers-leaves');
+        //$('nav').fadeOut(2000);
+        $('nav').hide();
+        $('.skill span').removeClass("expand ps");
+    } 
+});
+
+/*---------LOADING----------*/
+paceOptions = {
+    startOnPageLoad : false,
+// Disable the 'elements' source
+    elements: false,
+
+ // Only show the progress on regular and ajax-y page navigation,
+ // not every request
+    restartOnRequestAfter: false
+}
+
+/*---------PORTFOLIO----------*/
+$(function() {
+				$('#dg-container').gallery();
+});
+
+/*---------SKILLS----------*/
     // Function which adds the 'animated' class to any '.animatable' in view
   var doAnimations = function() {
     
@@ -52,34 +87,4 @@ $(document).ready(function(){
   // Hook doAnimations on scroll, and trigger a scroll
 	$(window).on('scroll', doAnimations);
   $(window).trigger('scroll');
-
-    
-});
-
-$(window).scroll(function(event) {
-    if ($(window).scrollTop()>=150) {
-        event.preventDefault();
-        $('body').addClass('flowers-leaves');
-        $('nav').fadeIn(2000);
-    } 
-    else if ($(window).scrollTop()== 0) {
-        $('body').removeClass('flowers-leaves');
-        //$('nav').fadeOut(2000);
-        $('nav').hide();
-        $('.skill span').removeClass("expand ps");
-    } 
-});
-
-paceOptions = {
-    startOnPageLoad : false,
-// Disable the 'elements' source
-    elements: false,
-
- // Only show the progress on regular and ajax-y page navigation,
- // not every request
-    restartOnRequestAfter: false
-}
-
-
-
 
