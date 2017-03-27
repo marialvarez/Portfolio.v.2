@@ -1,3 +1,6 @@
+$header-background:#fd1f29;
+$header-background-2:#f25957;
+    
 body {
     font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
     font-size: 15px;
@@ -47,32 +50,44 @@ body {
     }
 }
 
-.transition,
-.scrollDown * {
-    transition: all 0.3s ease-in-out;
-}
- 
-header,
-section,
-footer {
-    position: relative;
-}
-
 header {
-    background: #f25957;
+    background: $header-background;
     height: 100%;
     
     h1 {
+        font-family: 'Sacramento';
         position: relative;
         top:40%;
         margin: 0 auto;
         color:beige;
         font-weight: bold;
         font-size: 50px;
-        border: 1px solid white;
-        width: 250px;
+        border-bottom: 1px solid white;
+        width: 450px;
         padding: 10px 10px;
     }
+    p{
+        font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;;
+        position: relative;
+        top:42%;
+        margin: 0 auto;
+        color:beige;
+        font-weight: 300;
+        font-size: 20px;
+        width: 300px;
+        padding: 10px 40px;
+    }
+    /*
+    span {
+        font-family: 'Vidaloka', serif;
+        position: relative;
+        top:40%;
+        margin: 0 auto;
+        color:beige;
+        font-weight: bold;
+        font-size: 60px;
+        padding-left: 0px;
+    }*/
 }
 
 .flowers-leaves 
@@ -93,16 +108,6 @@ header {
     }  
 }
 
-//EJEMPLO
-#section2 {
-    padding-top:50px;height:500px;color: #fff; background-color: #673ab7;
-}
-#section3 {
-    padding-top:50px;height:500px;color: #fff; background-color: #ff9800;
-}
-#section4 {
-    padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;
-}
 //FIN EJEMPLO
 .container-nav {
     padding-right: 0;
@@ -118,6 +123,7 @@ header {
 }
 .navbar-inverse {
     border-color: #080808;
+    background-color: none;
 }
 .nav li a {
     padding: 25px 30px;

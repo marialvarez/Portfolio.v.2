@@ -1,6 +1,7 @@
 @media (max-width: 991px) {
   
     body {
+        width: 100%;
         
         #about-me {
             .col-right {
@@ -42,6 +43,16 @@
                 transform: translate(-60%, 60%);
             } 
             
+        }
+        .col-xs-12 {
+            h1 {
+                font-weight: 900 !important;
+                font-size: 52px !important;
+                color:coral !important;
+                padding: 10px !important;
+                writing-mode: horizontal-tb;
+                transform: rotate(360deg);
+            }    
         }
     } 
 }

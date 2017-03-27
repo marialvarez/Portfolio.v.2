@@ -1,0 +1,51 @@
+/***********************CONTACT*********************/
+#contact {
+    padding-bottom: 0;
+    background-color: #efece2;
+}
+.despedida{
+	display: inline-block;
+  width: 40%;
+  color: #213556;
+  font-size: 16px;
+}
+.icn-final{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #B3A394;
+  display: inline-block;
+  margin: 0 20px;
+}
+.icn-final img{
+  margin-top: 25%;
+}
+.cv{
+	display: inline-block;
+	background-color: #F87060;
+	border-radius: 5px;
+	padding: 1%;
+  margin: 2em 0;
+  cursor: pointer;
+}
+.cv a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.frase{
+  color:white;
+  text-align: center;
+  background-color: #F87060;
+  font-family: 'Righteous', cursive;
+  font-size: 20px;
+  padding: 1%;
+}
+/***/
+.pv-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.inline-block {
+  display: inline-block;
+}

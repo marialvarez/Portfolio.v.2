@@ -26,6 +26,34 @@ $(document).ready(function(){
         }  // End if
     });
     
+    $(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
+    }
+  );
+    
+    // Function which adds the 'animated' class to any '.animatable' in view
+  var doAnimations = function() {
+    
+    // Calc current offset and get all animatables
+    var offset = $(window).scrollTop() + $(window).height(),
+        $animatables = $('.animatable');
+    
+    // Check all animatables and animate them if necessary
+		$animatables.each(function(i) {
+       var $animatable = $(this);
+			if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+        $animatable.removeClass('animatable').addClass('animated');
+			}
+    });
+
+	};
+  
+  // Hook doAnimations on scroll, and trigger a scroll
+	$(window).on('scroll', doAnimations);
+  $(window).trigger('scroll');
+
+    
 });
 
 $(window).scroll(function(event) {
@@ -33,23 +61,14 @@ $(window).scroll(function(event) {
         event.preventDefault();
         $('body').addClass('flowers-leaves');
         $('nav').fadeIn(2000);
-        //$('nav').show();
-        
     } 
     else if ($(window).scrollTop()== 0) {
         $('body').removeClass('flowers-leaves');
         //$('nav').fadeOut(2000);
         $('nav').hide();
-        //$('nav').css('display':'none');
-       
+        $('.skill span').removeClass("expand ps");
     } 
 });
-
-/*
-$(window).load(function() {
-    $("body").removeClass("preload");
-});
-*/
 
 paceOptions = {
     startOnPageLoad : false,
@@ -61,14 +80,6 @@ paceOptions = {
     restartOnRequestAfter: false
 }
 
-/*
-if ($(window).width() < 480) {
-    $(window).resize(function() {
-        $('header').css('height',$(window).height());
-    });
-    $('header').css('height',$(window).height());
-}
-*/
 
 
 

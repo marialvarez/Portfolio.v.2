@@ -1,12 +1,23 @@
-/* General Blueprint Style */
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
-@font-face {
-	font-family: 'bpicons';
-	font-weight: normal;
-	font-style: normal;
-	src: url('../fonts/bpicons/bpicons.eot');
-	src: url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/bpicons/bpicons.woff') format('woff'),
-	url('../fonts/bpicons/bpicons.ttf') format('truetype'),
-	url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
-} 
+#portfolio {
+    background: #e3e1d2;
+}
+.dg-wrapper {
+    div {
+        transform: translateY(40px);
+        
+        button {
+            
+            display: inline-block;
+            background-color: #F87060;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #848484;
+            color:#fff;
+            font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
+            font-style: normal;
+        }
+    }
+}

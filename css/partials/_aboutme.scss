@@ -1,6 +1,7 @@
 //ABOUT ME
 * {
     outline: 1px solid rgba(255,0,0,0.4);
+    box-sizing: border-box;
 }
 
 #about-me {
@@ -15,7 +16,7 @@
     }
     */
     .about {
-        transform: translateY(35px);
+        transform: translateY(40px);
     }
     .description {
         padding-top: 50px;
@@ -23,6 +24,9 @@
     img {
         width: 75%;
         margin-left: 50px;
+        border: 3px solid #626262;
+        padding: 10px;
     }
+    
 }
 
