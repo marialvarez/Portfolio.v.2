@@ -6,7 +6,7 @@
   left: 0px;
   bottom: 0px;
   right: 0px;
-  background: #rgb(253, 31, 41);
+  background: rgb(253, 31, 41);
   z-index: 49;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
