@@ -3,13 +3,13 @@
     background-color: #efece2;
 }
 .texto h3{
-  font-size: 17px;
-  margin-bottom: 5px;
-  padding-top: 5px;
-  font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    font-weight: bold;
 }
 .texto h3:hover{
-  color: #F87060;
+    color: #F87060;
 }
 .pulse {
     padding: 0;
@@ -24,8 +24,9 @@ img {border: none;}
 #skill { 
 	list-style:none; 
 	padding-top:30px;
-    padding-left: 20px;
+    padding-left: 200px;
     padding-right: 110px;
+    width: 90%;
 }
 
 #skill li { 
@@ -35,20 +36,19 @@ img {border: none;}
 	border-radius:10px; 
 	border:2px solid #222;
 }
-
-#skill li em { 
-    font-size:18px;
+#skill i {
+    font-size:30px;
+}
+#skill li em {
+    font-size:20px;
 	position:relative; 
-	top:-30px;
+	bottom: 45px;
     font-style: normal;
-    font-weight:700;
-
 }
 .animatable {
   
   /* initially hide animatable objects */
   visibility: hidden;
-  
   /* initially pause animatable objects their animations */  
   animation-play-state: paused; 
 }
@@ -66,36 +66,35 @@ img {border: none;}
     border-radius:10px;
 	background:linear-gradient(to right, #f7a56c 0%,#e46885 100%); 
 	position:absolute;
-	box-shadow:0px 0px 3px 1px rgba(234,224,172,0.6);
 }
 
 .ps      { 
-    width:80%; 
-    -webkit-animation:ps 10s ease-out;     
+    width:60%; 
+    -webkit-animation:ps 7s ease-out;     
 }
 .indd   { 
-    width:70%; 
-    -webkit-animation:indd 10s ease-out;   
+    width:50%; 
+    -webkit-animation:indd 7s ease-out;   
 }
 .ai    { 
-    width:50%;  
-    -webkit-animation:ai 10s ease-out;       
+    width:40%;  
+    -webkit-animation:ai 7s ease-out;       
 }
-.fla    { width:40%;  
-    -webkit-animation:fla 10s ease-out;       
+.fla    { width:35%;  
+    -webkit-animation:fla 7s ease-out;       
 }
-.html   { width:60%;  
-    -webkit-animation:html 10s ease-out;       
+.html   { width:38%;  
+    -webkit-animation:html 7s ease-out;       
 }
 .css    { width:20%;  
-    -webkit-animation:css 10s ease-out;        
+    -webkit-animation:css 7s ease-out;        
 }
 
 
-@-webkit-keyframes ps         { 0%  { width:0px;} 100%{ width:80%;}  }
-@-webkit-keyframes indd       { 0%  { width:0px;} 100%{ width:70%;}  }
-@-webkit-keyframes ai         { 0%  { width:0px;} 100%{ width:50%;} }
-@-webkit-keyframes fla        { 0%  { width:0px;} 100%{ width:40%;} }
-@-webkit-keyframes html       { 0%  { width:0px;} 100%{ width:60%;} }
+@-webkit-keyframes ps         { 0%  { width:0px;} 100%{ width:60%;}  }
+@-webkit-keyframes indd       { 0%  { width:0px;} 100%{ width:50%;}  }
+@-webkit-keyframes ai         { 0%  { width:0px;} 100%{ width:40%;} }
+@-webkit-keyframes fla        { 0%  { width:0px;} 100%{ width:35%;} }
+@-webkit-keyframes html       { 0%  { width:0px;} 100%{ width:38%;} }
 @-webkit-keyframes css        { 0%  { width:0px;} 100%{ width:20%;}  }
 

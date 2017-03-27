@@ -1,5 +1,7 @@
 $header-background:#fd1f29;
 $header-background-2:#f25957;
+$background: #f0776c;
+$lila : #d76d83;
     
 body {
     font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
@@ -50,7 +52,8 @@ body {
 }
 
 header {
-    background: $header-background;
+    //background: $lila;
+    background: radial-gradient(#f0776c, #d76d83); 
     height: 100%;
     
     h1 {
@@ -112,7 +115,7 @@ header {
     margin-left: auto;
     font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
     font-size: 18px;
-    background-color: rgb(253, 31, 41) !important;
+    background-color: #d76d83 !important;
 }
 .navbar-fixed-top {
     position: fixed;
@@ -121,20 +124,20 @@ header {
     padding-right: 30%;
 }
 .navbar-inverse {
-    background-color: rgb(253, 31, 41) !important;
-    border-color: rgb(253, 31, 41) !important;
+    background-color: $lila !important;
+    border-color: $lila !important;
     color: #fff !important;
+    font-weight: 100 !important;
 }
 .nav li a {
-    padding: 20px 29px;
+    padding: 20px 28px;
 }
 .navbar-inverse .navbar-nav>.active>a {
-    background-color: rgb(253, 31, 41) !important; 
+    background-color: $lila !important; 
     
 }
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-    background-color: #95932e !important; 
-    text-shadow: 1px 1px #333;
+    background-color: #f0776c !important; 
 }
 .navbar-inverse .navbar-nav>li>a {
     color: #fff !important; 
