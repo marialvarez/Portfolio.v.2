@@ -114,12 +114,11 @@ header {
 .navbar-inverse .navbar-nav > li > a {
   color: #fff !important; }
 
-/*ABOUT ME
+ABOUT ME
 * {
-    outline: 1px solid rgba(255,0,0,0.4);
-    box-sizing: border-box;
-}
-*/
+  outline: 1px solid rgba(255, 0, 0, 0.4);
+  box-sizing: border-box; }
+
 #about-me {
   z-index: 3;
   background: #e3e1d2;
@@ -146,15 +145,8 @@ header {
 
 @media (max-width: 991px) {
   body {
-    width: 100%; }
-    body #about-me .col-right {
-      position: relative;
-      top: inherit;
-      bottom: inherit;
-      right: inherit;
-      left: inherit;
-      width: 100%;
-      height: 400px; }
+    width: 100%;
+    overflow-x: hidden; }
     body:after {
       display: none; }
     body .flowers-topleft {
@@ -181,6 +173,7 @@ header {
       writing-mode: horizontal-tb;
       transform: rotate(360deg); } }
 section {
+  width: 100%;
   padding: 110px 0; }
   section h1, section h2, section h3, section p, section span, section em {
     font-family: "Alegreya Sans", Helvetica, Arial, sans-serif; }
@@ -388,5 +381,8 @@ img {
 
 .inline-block {
   display: inline-block; }
+
+* {
+  outline: 1px solid rgba(255, 0, 0, 0.4); }
 
 /*# sourceMappingURL=main.css.map */
