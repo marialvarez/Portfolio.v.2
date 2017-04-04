@@ -414,7 +414,9 @@ type {
   background-color: #c40f5e !important;
   font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
   font-size: 20px;
-  padding: 1%; }
+  padding: 0.5%; }
+  .frase .smallcito {
+    font-size: 12px; }
 
 /***/
 .pv-70 {
