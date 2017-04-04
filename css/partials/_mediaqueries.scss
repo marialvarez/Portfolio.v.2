@@ -47,5 +47,16 @@
     } 
 }
 
+@media (max-width: 420px) {
+    header {
+        h1 {
+            width: 250px;
+        }
+        p {
+            top:230px;
+        }
+    }
+}
+
   
   

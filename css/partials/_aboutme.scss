@@ -1,4 +1,4 @@
-ABOUT ME
+//---------------------ABOUT ME-------------------//
 * {
     outline: 1px solid rgba(255,0,0,0.4);
     box-sizing: border-box;
@@ -25,14 +25,15 @@ ABOUT ME
     .col-img {
         width: 455px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        background-color: #e3e1d2;
+        background-color: #ac5162;
         border-radius: 5px;
         z-index: 2;
         margin-left: 65px;
     }
     span {
-            color: #95932e;
-            font-weight: 400;
+            color: #000;
+            font-weight: bold;
+        
         }
     
 }

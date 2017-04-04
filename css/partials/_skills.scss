@@ -1,6 +1,12 @@
 /************************SKILLS************************/
 #skills {
     background-color: #efece2;
+    /*background: url(../../img/4.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    */
 }
 .texto h3{
     font-size: 17px;
@@ -98,3 +104,18 @@ img {border: none;}
 @-webkit-keyframes html       { 0%  { width:0px;} 100%{ width:38%;} }
 @-webkit-keyframes css        { 0%  { width:0px;} 100%{ width:20%;}  }
 
+
+/*typescript styles... */
+@import url("//fonts.googleapis.com/css?family=Inconsolata:700");
+
+type{
+  font-family: Inconsolata, Source Code Pro, Consolas, monospace;
+  margin-left: calc(50vw - 6em);
+  font-size: 55px;
+  font-weight: bold;
+  color:white;
+  float:left;
+  padding:40px;
+  margin-bottom:20px;
+  margin-left:13%;
+}

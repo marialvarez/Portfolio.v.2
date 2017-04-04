@@ -2,10 +2,28 @@ $header-background:#fd1f29;
 $header-background-2:#f25957;
 $background: #f0776c;
 $lila : #d76d83;
-$liladark:#c12b6c;
+$liladark_2:#d66294;
+$liladark:#c40f5e;
 $centercolor: #fcb28a;
 $titulo: #6c0342;
-    
+
+
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin horizontal-align {
+    margin: 0 auto;
+}
+
+@mixin hover ($back-color, $text-color) {
+    background-color: $back-color;
+    text-decoration: 0;
+    color: $text-color;
+}
+
 body {
     font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
     font-size: 15px;
@@ -59,27 +77,28 @@ header {
     height: 100%;
     
     h1 {
-        font-family: 'Sacramento';
-        position: relative;
-        top:40%;
-        margin: 0 auto;
+        @include vertical-align;
+        @include horizontal-align;
+        font-family: 'Sacramento', cursive;
+        text-align: center;
         color:$titulo;
         font-weight: bold;
         font-size: 65px;
         border-bottom: 1px solid $titulo;
         width: 450px;
         padding: 10px 10px;
+    
     }
     p{
+        @include vertical-align;
+        @include horizontal-align;
         font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
-        position: relative;
-        top:42%;
-        margin: 0 auto;
         color:$titulo;
+        top:48%;
         font-weight: 300;
         font-size: 20px;
-        width: 300px;
         padding: 10px 40px;
+        text-align: center;
     }
     .glyphicon-chevron-down {
         position: relative;
@@ -117,7 +136,8 @@ header {
     margin-left: auto;
     font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
     font-size: 18px;
-    background-color: #d76d83 !important;
+    //background-color: #d76d83 !important;
+    background-color: $liladark !important;
 }
 .navbar-fixed-top {
     position: fixed;
@@ -126,8 +146,9 @@ header {
     padding-right: 30%;
 }
 .navbar-inverse {
-    background-color: $lila !important;
-    border-color: $lila !important;
+    //background-color: #6c0342 !important;
+    background-color: $liladark !important;
+    border-color: $liladark !important;
     color: #fff !important;
     font-weight: 100 !important;
 }
@@ -135,11 +156,11 @@ header {
     padding: 20px 28px;
 }
 .navbar-inverse .navbar-nav>.active>a {
-    background-color: $lila !important; 
+    background-color: $liladark !important;
     
 }
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-    background-color: #f0776c !important; 
+    background-color: $lila !important; 
 }
 .navbar-inverse .navbar-nav>li>a {
     color: #fff !important; 

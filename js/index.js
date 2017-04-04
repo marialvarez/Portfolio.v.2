@@ -82,9 +82,10 @@ $(function() {
 			}
     });
 
-	};
+};
   
-  // Hook doAnimations on scroll, and trigger a scroll
-	$(window).on('scroll', doAnimations);
-  $(window).trigger('scroll');
+// Hook doAnimations on scroll, and trigger a scroll
+$(window).on('scroll', doAnimations);
+$(window).trigger('scroll');
+
 
