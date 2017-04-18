@@ -1,3 +1,7 @@
+* {
+    outline: 1px solid rgba(255,0,0,0.4);
+}
+
 @import url("//fonts.googleapis.com/css?family=Inconsolata:700");
 body {
   font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
@@ -146,56 +150,30 @@ header {
     color: #000;
     font-weight: bold; }
 
-@media (max-width: 991px) {
-  body {
-    width: 100%;
-    overflow-x: hidden; }
-    body:after {
-      display: none; }
-    body .flowers-topleft {
-      transform: translate(-10%, -10%); }
-    body .flowers-topright {
-      transform: translate(10%, -10%); }
-    body .flowers-bottomright {
-      transform: translate(10%, 10%); }
-    body .flowers-bottomleft {
-      transform: translate(-10%, 10%); }
-    body .flowers-leaves .flowers-topleft {
-      transform: translate(-55%, -55%); }
-    body .flowers-leaves .flowers-topright {
-      transform: translate(55%, -55%); }
-    body .flowers-leaves .flowers-bottomright {
-      transform: translate(55%, 55%); }
-    body .flowers-leaves .flowers-bottomleft {
-      transform: translate(-60%, 60%); }
-    body .col-xs-12 h1 {
-      font-weight: 900 !important;
-      font-size: 52px !important;
-      color: coral !important;
-      padding: 10px !important;
-      writing-mode: horizontal-tb;
-      transform: rotate(360deg); } }
-@media (max-width: 420px) {
-  header h1 {
-    width: 250px; }
-  header p {
-    top: 230px; } }
-section {
+
+section{
   width: 100%;
-  padding: 110px 0; }
-  section h1, section h2, section h3, section p, section span, section em {
-    font-family: "Alegreya Sans", Helvetica, Arial, sans-serif; }
+  padding: 110px 0;
+}
+
+
   section h1 {
     font-weight: 800;
     font-size: 52px;
     color: #c40f5e;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    padding: 10px 10px; }
+    vertical-align: center;
+    text-align: center;
+    margin: 50px auto;
+}
   section p {
     font-weight: 500;
     font-size: 18px;
     color: #0000; }
+.logo {
+    width: 60%;
+}
 
 .all {
   /*
@@ -219,7 +197,7 @@ section {
     color: white;
     font-style: normal; }
   .dg-wrapper div button:hover {
-    background-color: #95932e;
+    background-color: #c40f5e;
     text-shadow: 1px 1px #333;
     color: #fff;
     font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
@@ -246,7 +224,8 @@ section {
 
 .pulse {
   padding: 0;
-  display: inline-block; }
+  display: inline-block; 
+margin-right: 5px;}
   .pulse i {
     width: 20px; }
 
@@ -261,11 +240,11 @@ img {
   width: 90%; }
 
 #skill li {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   background: #333;
-  height: 15px;
+  height: 20px;
   border-radius: 10px;
-  border: 2px solid #222; }
+  border: 1px solid #222; }
 
 #skill i {
   font-size: 30px; }
@@ -289,8 +268,7 @@ img {
   animation-play-state: running; }
 
 .expand {
-  height: 10px;
-  margin: 2px;
+  height: 18px;
   border-radius: 10px;
   background: linear-gradient(to right, #f7a56c 0%, #e46885 100%);
   position: absolute; }
@@ -364,7 +342,6 @@ type {
 /***********************CONTACT*********************/
 #contact {
   padding-bottom: 0px;
-  padding-right: 100px;
   background-color: #efece2; }
 
 .despedida {
@@ -425,7 +402,63 @@ type {
 .inline-block {
   display: inline-block; }
 
-* {
-  outline: 1px solid rgba(255, 0, 0, 0.4); }
+
+@media (max-width: 991px) {
+  body {
+    width: 100%;
+    overflow-x: hidden; }
+    body:after {
+      display: none; }
+    body .flowers-topleft {
+      transform: translate(-10%, -10%); }
+    body .flowers-topright {
+      transform: translate(10%, -10%); }
+    body .flowers-bottomright {
+      transform: translate(10%, 10%); }
+    body .flowers-bottomleft {
+      transform: translate(-10%, 10%); }
+    body .flowers-leaves .flowers-topleft {
+      transform: translate(-55%, -55%); }
+    body .flowers-leaves .flowers-topright {
+      transform: translate(55%, -55%); }
+    body .flowers-leaves .flowers-bottomright {
+      transform: translate(55%, 55%); }
+    body .flowers-leaves .flowers-bottomleft {
+      transform: translate(-60%, 60%); }
+    body .col-xs-12 h1 {
+      font-weight: 800 !important;
+      color: #c40f5e !important;
+      padding: 10px !important;
+      writing-mode: horizontal-tb;
+      transform: rotate(360deg); } 
+section {
+  width: 100% !important;
+  padding: 10px 0 !important; }
+     .col-img {
+   width: 300px !important;
+    margin: 0 auto !important;
+    }
+}
+
+@media (max-width: 420px) {
+    body {
+        width: 100% !important;
+    }
+  header p {
+    top: 300px; } 
+  section {
+  width: 100% !important;
+  padding: 10px 0 !important; }
+    
+    .col-img {
+   width: 220px !important;
+    margin: 0 auto !important;
+    }
+    #skill {
+        padding-left: 30px !important;
+        padding-right: 0 !important;
+    }
+
+}
 
 /*# sourceMappingURL=main.css.map */
