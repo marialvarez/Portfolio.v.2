@@ -98,18 +98,19 @@ header {
 
 .navbar-fixed-top {
   position: fixed;
-  padding-left: 30%;
   z-index: 10;
-  padding-right: 30%; }
+  text-align: center;
+  padding-left:  430px;
+  padding-right: 400px;
+}
 
 .navbar-inverse {
   background-color: #c40f5e !important;
   border-color: #c40f5e !important;
   color: #fff !important;
-  font-weight: 100 !important; }
+  font-weight: 100 !important; 
 
-.nav li a {
-  padding: 20px 28px; }
+}
 
 .navbar-inverse .navbar-nav > .active > a {
   background-color: #c40f5e !important; }
@@ -400,6 +401,7 @@ type {
   display: inline-block; }
 
 
+
 @media (max-width: 991px) {
   body {
     width: 100%;
@@ -457,5 +459,6 @@ section {
     }
 
 }
+
 
 /*# sourceMappingURL=main.css.map */
