@@ -1,5 +1,4 @@
 
-@import url("//fonts.googleapis.com/css?family=Inconsolata:700");
 body {
   font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -456,6 +455,9 @@ section {
     #skill {
         padding-left: 30px !important;
         padding-right: 0 !important;
+    }
+    .navbar-toggle {
+        margin-right: 50% !important;
     }
 
 }
